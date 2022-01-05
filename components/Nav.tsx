@@ -32,10 +32,10 @@ export default function Nav() {
               </Link>
             </div>
             <div className="-mr-2 -my-2 sm:hidden">
-              <Popover.Button className=" rounded-md p-2 inline-flex items-center justify-center text-white hover:text-gray-500 ">
+              <Popover.Button className=" rounded-md p-2 inline-flex items-center justify-center text-black hover:text-gray-500 ">
                 <button
                   type="button"
-                  className="inline-flex items-center lg:hidden text-white  focus-visible:ring ring-indigo-300  active:text-gray-700 text-sm md:text-base font-semibold rounded-lg gap-2 px-2.5 py-2"
+                  className="inline-flex items-center lg:hidden text-black  focus-visible:ring ring-indigo-300  active:text-gray-700 text-sm md:text-base font-semibold rounded-lg gap-2 px-2.5 py-2"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -82,7 +82,7 @@ export default function Nav() {
             focus
             className="absolute top-0  inset-x-0 p-2 h-[100vh] transition transform origin-top-right md:hidden"
           >
-            <div className="rounded-lg shadow-lg ring-1 h-full ring-black ring-opacity-5 bg-[#141628] text-white divide-y-2 divide-gray-50">
+            <div className="rounded-lg shadow-lg ring-1 h-full ring-black ring-opacity-5 bg-gray-200  text-black divide-y-2 divide-gray-50">
               <div className="pt-5 pb-6 px-5">
                 <div className="flex items-center justify-between">
                   <div className="text-white">
