@@ -1,7 +1,7 @@
 export default function WhatWeDo() {
     
   return (
-    <div className="flex  flex-col justify-center items-center w-full my-[30vh]">
+    <div className="flex  flex-col justify-center items-center w-full my-[30vh] bg-[#F9F9F9]">
       <div className="container  mx-auto flex justify-center items-center my-[1rem]">
         <h1 className="text-4xl  text-center font-semibold  max-w-3xl">
           {" "}
