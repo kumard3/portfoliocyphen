@@ -49,7 +49,7 @@ export default function WhatWeDo() {
       </div>
      
 
-      <section className="bg-[#F9F9F9] w-full mt-[10rem]">
+      <section className="bg-[#F9F9F9] w-full mt-[10rem] ">
       <div className="ontainer mx-auto text-6xl font-blod text-center">  <h1> what we do? </h1> </div>
 	<div className="p-4 lg:p-8 container mx-auto">
 		<div className="flex flex-col overflow-hidden  rounded-md shadow-sm lg:flex-row">
@@ -61,7 +61,7 @@ export default function WhatWeDo() {
 				<h2 className="text-3xl font-bold">Digital Markting</h2>
 				<p className="my-6 dark:text-coolGray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aliquam possimus quas, error esse quos.</p>
 				{/* <button type="button" className="self-start">Action</button> */}
-        <ul> 
+        <ul className="list-disc"> 
         <li> 
         Content Management Systems
           </li> <li> 
@@ -82,13 +82,25 @@ export default function WhatWeDo() {
 				{/* <span className="text-xs uppercase dark:text-coolGray-400">Join, it's free</span> */}
 				<h2 className="text-3xl font-bold">Web Development</h2>
 				<p className="my-6 dark:text-coolGray-400">From simple websites to online stores to custom built applications, we do it all.</p>
-        <ul> 
+        <ul className="list-disc"> 
         <li> 
         Content Management Systems
-          </li> <li> 
-        Content Management Systems
-          </li> <li> 
-        Content Management Systems
+          </li> 
+          <li> 
+          Payment Processor Integrations
+
+          </li> 
+          <li> 
+          eCommerce Solutions
+
+          </li>
+          <li> 
+          Search Engine Optimization
+
+          </li>
+          <li> 
+          Web Design
+
           </li>
 
         </ul>
@@ -106,14 +118,19 @@ export default function WhatWeDo() {
 				<p className="my-6 dark:text-coolGray-400">We specialize in building native mobile apps for Android and iOS using React Native.</p>
 				{/* <button type="button" className="self-start">Action</button> */}
 			
-        <ul> 
+        <ul className="list-disc"> 
         <li> 
-        Content Management Systems
-          </li> <li> 
-        Content Management Systems
-          </li> <li> 
-        Content Management Systems
-          </li>
+        React Native Development
+        </li> <li>
+
+API Development
+        </li>
+        <li>
+Backend Development
+</li>
+<li>
+3rd party Integrations
+          </li> 
 
         </ul>
       </div>
