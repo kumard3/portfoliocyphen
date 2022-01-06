@@ -34,19 +34,14 @@ export default function Nav() {
             <div className="-mr-2 -my-2 sm:hidden">
               <div
                 onClick={() => setOpened(true)}
-                className=" rounded-md p-2 inline-flex items-center justify-center text-black hover:text-gray-500 "
-              >
-                <button
-              
-                  className="inline-flex items-center lg:hidden text-black  focus-visible:ring ring-indigo-300  active:text-gray-700 text-sm md:text-base font-semibold rounded-lg gap-2 px-2.5 py-2"
-                >
+                className=" rounded-md p-2 inline-flex items-center justify-center text-black hover:text-gray-500 ">
+                <button className="inline-flex items-center lg:hidden text-black  focus-visible:ring ring-indigo-300  active:text-gray-700 text-sm md:text-base font-semibold rounded-lg gap-2 px-2.5 py-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-6 w-6"
                     fill="white"
                     viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
+                    stroke="currentColor">
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -57,10 +52,7 @@ export default function Nav() {
                 </button>
               </div>
             </div>
-            <nav
-           
-              className="hidden sm:flex space-x-10 items-center"
-            >
+            <nav className="hidden sm:flex space-x-10 items-center">
               {navlink.map((n) => {
                 return (
                   <Link key={n.name} href={n.href}>
@@ -72,35 +64,29 @@ export default function Nav() {
           </div>
         </div>
 
-
-          <Drawer
-            opened={opened}
-            onClose={() => setOpened(false)}
-            padding="xl"
-            position="right" size="lg"
-          >
-                <div className="mt-6">
-                  <nav className="grid gap-y-8">
-                    {navlink.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        className="-m-3 p-3 flex items-center rounded-md hover:bg-black hover:text-white"
-                      >
-                        <h1 className="my-3 ml-3 text-3xl font-bold ">
-                          {item.name}
-                        </h1>
-                      </a>
-                    ))}
-                  </nav>
-             
-            </div>
-          </Drawer>
-          {/* <Popover.Panel
+        <Drawer
+          opened={opened}
+          onClose={() => setOpened(false)}
+          padding="xl"
+          position="right"
+          size="lg">
+          <div className="mt-6">
+            <nav className="grid gap-y-8">
+              {navlink.map((item) => (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className="-m-3 p-3 flex items-center rounded-md hover:bg-black hover:text-white">
+                  <h1 className="my-3 ml-3 text-3xl font-bold ">{item.name}</h1>
+                </a>
+              ))}
+            </nav>
+          </div>
+        </Drawer>
+        {/* <Popover.Panel
             focus
             className="absolute top-0  inset-x-0 p-2 h-[100vh] transition transform origin-top-right md:hidden"
           ></Popover.Panel> */}
-  
       </div>
     </div>
   );
