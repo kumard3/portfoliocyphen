@@ -23,14 +23,14 @@ export default function Hero() {
               </h1>
             </div>
           </div>
-          <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
+          {/* <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
             <a
               href="#work"
               className="px-8 py-3 text-lg font-semibold text-white rounded bg-[#F13223]"
             >
               See my work
             </a>
-          </div>
+          </div> */}
         </div>
         <div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
           <img
