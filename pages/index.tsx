@@ -8,18 +8,17 @@ import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import WhatWeDo from "../components/WhatWeDo";
 
-
 const Home: NextPage = () => {
   return (
     <div className=" min-h-screen 	">
       <Head>
-        <title>Kumar Deepanshu portfolio</title>
-        <meta name="description" content="My Personal Portfolio" />
+        <title>Cyphen Innovations</title>
+        <meta name="description" content="Cyphen Innovations site." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Nav />
       <Hero />
-    <WhatWeDo />
+      <WhatWeDo />
       <Contact />
       <Footer />
     </div>
