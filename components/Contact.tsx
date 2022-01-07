@@ -27,7 +27,8 @@ export default function Contact() {
       .sendForm(
         "service_jz52urn",
         "template_kizhaxs",
-        (form.current),
+        // @ts-ignore: Null as String error.
+        form.current,
         "user_NKvWn4AZyRJjhvf6e9NBj"
       )
       .then(
