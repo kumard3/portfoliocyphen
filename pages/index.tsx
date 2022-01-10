@@ -19,6 +19,7 @@ const Home: NextPage = () => {
       <Nav />
       <Hero />
       <WhatWeDo />
+      <Carousel />
       <Contact />
       <Footer />
     </div>
