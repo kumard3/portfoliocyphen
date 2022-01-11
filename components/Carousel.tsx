@@ -67,7 +67,7 @@ const data = [
 let count = 0;
 
 export default function Carousel() {
-  const [currentIndex, setCurrentIndex] = useState(1);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleOnNextClick = () => {
     // count = (count + 1) % featuredImages.length;
@@ -124,7 +124,7 @@ export default function Carousel() {
             <button
               onClick={handleOnPrevClick}
               aria-label="previous"
-              className="mx-3 default-focus bg-[#393D5F] hover:bg-lighterGrey focus:outline-none p-4 mr-4 text-2xl duration-300 ease-in-out">
+              className="mx-3 default-focus  hover:bg-lighterGrey focus:outline-none p-4 mr-4 text-2xl duration-300 ease-in-out">
               <svg
                 stroke="currentColor"
                 fill="none"
@@ -142,12 +142,12 @@ export default function Carousel() {
               </svg>
             </button>
             <span>
-              0{count + 1}/0{data.length}
+              0{count+1}/0{data.length}
             </span>
             <button
               onClick={handleOnNextClick}
               aria-label="next"
-              className="mx-3 default-focus bg-[#393D5F] hover:bg-lighterGrey focus:outline-none p-4 mr-4 text-2xl duration-300 ease-in-out">
+              className="mx-3 default-focus  hover:bg-lighterGrey focus:outline-none p-4 mr-4 text-2xl duration-300 ease-in-out">
               <svg
                 stroke="currentColor"
                 fill="none"
