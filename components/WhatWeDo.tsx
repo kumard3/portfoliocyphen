@@ -7,7 +7,7 @@ export default function WhatWeDo() {
     AOS.init();
   }, []);
   return (
-    <div className="flex  flex-col justify-center items-center w-full my-[30vh] bg-[#F9F9F9] " id="about">
+    <div className="flex  flex-col justify-center items-center w-full my-[30vh]  text-2xl sm:text-3xl " id="about">
       <div className="container  mx-auto flex justify-center items-center my-[1rem]">
         <h1 className="text-4xl  text-center font-semibold  max-w-3xl">
           {" "}
@@ -16,7 +16,7 @@ export default function WhatWeDo() {
         </h1>
       </div>
       <div className=" mt-[50px] index1">
-        <div className="svg-bg_background__2ILQI ">
+        <div className="svg-bg_background__2ILQ ">
           <svg preserveAspectRatio="none" viewBox="0 0 1440 1159">
             <defs>
               <clipPath id="wave-path-hero">
@@ -54,7 +54,7 @@ export default function WhatWeDo() {
         </div>
       </div>
 
-      <section className="bg-[#F9F9F9] w-full mt-[10rem] ">
+      <section className=" w-full mt-[10rem] ">
         <div className="container mx-auto ">
           {" "}
           <h1 className="text-6xl font-bold text-orange-600 text-center">

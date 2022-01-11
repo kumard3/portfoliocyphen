@@ -95,7 +95,7 @@ export default function Carousel() {
           </p>
         </div>
         <div className="overflow-x-scroll">
-          <div className="flex  overflow-x-scroll max-w-[3000px] rounded-md shadow-sm">
+          <div className="flex   max-w-[3000px] rounded-md shadow-sm">
             <div className="flex items-center justify-center rounded-xl w-[595px] bg-slate-700 ">
               <img
                 className=" rounded-xl"

@@ -10,7 +10,7 @@ import WhatWeDo from "../components/WhatWeDo";
 
 const Home: NextPage = () => {
   return (
-    <div className=" min-h-screen 	">
+    <div className=" min-h-screen bg-[#141628] text-white	">
       <Head>
         <title>Cyphen Innovations</title>
         <meta name="description" content="Cyphen Innovations site." />

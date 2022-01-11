@@ -39,11 +39,11 @@ export default function Nav() {
   return (
     // <Popover className= {`sticky top-0 z-40 w-full backdrop-blur flex-none transition-colors duration-500 lg:z-50 lg:border-b lg:border-gray-900/10 bg-white supports-backdrop-blur:bg-white/95 ${show && 'bg-inherit	'}`}>
     <div
-      className={ `fixed w-full flex  z-50 backdrop-blur-sm text-black text-xl font-bold drop-shadow-xl flex-none ease-in-out duration-300 0 lg:z-50 lg:border-b lg:border-gray-900/10 bg-white/70  ${
-        scrollDirection === 'down' && "text-black text-xl font-bold drop-shadow-xl mt-[-120px] ease-in-out duration-300 	"
+      className={ `fixed w-full flex  z-50 backdrop-blur-sm text-xl font-bold drop-shadow-xl flex-none ease-in-out duration-300 0 lg:z-50 lg:border-b lg:border-gray-900/10 bg-[#141628]/50  ${
+        scrollDirection === 'down' && "text-xl font-bold drop-shadow-xl mt-[-120px] ease-in-out duration-300 	"
       } ${
         scrollDirection === 'up' &&
-        " mt-0 backdrop-blur-sm text-black text-xl font-bold drop-shadow-xl flex-none ease-in-out duration-300 0 lg:z-50 lg:border-b lg:border-gray-900/10 bg-white/70"
+        " mt-0 backdrop-blur-sm text-xl font-bold drop-shadow-xl flex-none ease-in-out duration-300 0 lg:z-50 lg:border-b lg:border-gray-900/10 bg-[#141628]/50"
       }`}>
       <div className="w-full container mx-auto">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 ">
@@ -59,8 +59,8 @@ export default function Nav() {
             <div className="-mr-2 -my-2 sm:hidden">
               <div
                 onClick={() => setOpened(true)}
-                className=" rounded-md p-2 inline-flex items-center justify-center text-black hover:text-gray-500 ">
-                <button className="inline-flex items-center lg:hidden text-black  focus-visible:ring ring-indigo-300  active:text-gray-700 text-sm md:text-base font-semibold rounded-lg gap-2 px-2.5 py-2">
+                className=" rounded-md p-2 inline-flex items-center justify-center hover:text-gray-500 ">
+                <button className="inline-flex items-center lg:hidden  focus-visible:ring ring-indigo-300  active:text-gray-700 text-sm md:text-base font-semibold rounded-lg gap-2 px-2.5 py-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-6 w-6"
@@ -95,8 +95,13 @@ export default function Nav() {
           onClose={() => setOpened(false)}
           padding="xl"
           position="right"
-          size="lg">
-          <div className="mt-6">
+          size="lg"
+          aria-labelledby="drawer-title"
+          aria-describedby="drawer-body"
+          closeButtonLabel="Close drawer"
+          className="   "
+          >
+          <div className="mt-6 bg-[#141628]">
             <nav className="grid gap-y-8">
               {navlink.map((item) => (
                 <a

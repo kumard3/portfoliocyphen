@@ -42,20 +42,25 @@ export default function Contact() {
       );
   };
   return (
-    <div id="contact" className="grid max-w-screen-xl grid-cols-1 gap-8 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 bg-coolGray-100 text-coolGray-800">
-    <div className="flex flex-col justify-between">
-      <div className="space-y-2">
-        <h2 className="text-4xl font-bold leading-tight lg:text-5xl">Let's talk!</h2>
-        <div className="text-coolGray-600">Vivamus in nisl metus? Phasellus.</div>
+    <div id="contact" className="grid max-w-screen-xl grid-cols-1 items-center gap-8 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32  dark:text-gray-100">
+      <div className="flex flex-col justify-between">
+        <div className="space-y-2">
+          <h2 className="text-4xl font-bold leading-tight lg:text-5xl">
+            Let's talk!
+          </h2>
+        </div>
+        <img
+          src="/Sendingemails_Flatline.png"
+          alt=""
+          className="w-[30rem]"
+        />
       </div>
-      <img src="assets/svg/doodle.svg" alt="" className="p-6 h-52 md:h-64"/>
-    </div>
 
         <form
           ref={form}
           onSubmit={sendEmail}
           noValidate={true}
-          className="flex flex-col py-6 space-y-6 md:py-0 md:px-6 ng-untouched ng-pristine ng-valid">
+          className="flex flex-col py-6 text-2xl space-y-6 md:py-0 md:px-6 ng-untouched ng-pristine ng-valid">
           <label className="block">
             <span className="mb-1">Full name</span>
             <input
@@ -89,7 +94,7 @@ export default function Contact() {
           </label>
           <button
             type="submit"
-            className="self-center px-8 py-3 text-xl rounded text-white bg-indigo-500 ">
+            className="self-center px-8 py-3 text-2xl rounded text-white font-bold bg-[#E26832] ">
             Submit
           </button>
         </form>
