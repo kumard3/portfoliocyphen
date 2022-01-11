@@ -9,7 +9,7 @@ export default function WhatWeDo() {
   return (
     <div className="flex  flex-col justify-center items-center w-full my-[30vh]  text-2xl sm:text-3xl " id="about">
       <div className="container  mx-auto flex justify-center items-center my-[1rem]">
-        <h1 className="text-4xl  text-center font-semibold  max-w-3xl">
+        <h1 className="text-4xl  text-center font-semibold  max-w-3xl p-4">
           {" "}
           We are an Indian digital agency. We blend our enthusiasm for
           human-centered design with cutting-edge development tools.{" "}
@@ -86,7 +86,7 @@ export default function WhatWeDo() {
             </div>
           </div>
           <div
-            data-aos="zoom-in-left"
+            data-aos="zoom-in"
             className="flex flex-col overflow-hidden md shadow-sm bg-slate-700/10 rounded-3xl my-4 lg:flex-row-reverse "
           >
             <div className="flex items-center justify-center flex-1 ">
