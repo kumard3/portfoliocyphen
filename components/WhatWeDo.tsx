@@ -65,7 +65,7 @@ export default function WhatWeDo() {
         <div className="p-4 lg:p-8 container mx-auto">
           <div
             data-aos="zoom-in"
-            className="flex flex-col overflow-hidden md shadow-sm lg:flex-row"
+            className="flex flex-col overflow-hidden md shadow-sm bg-slate-700/10 rounded-3xl my-4 lg:flex-row "
           >
             <div className="flex items-center justify-center flex-1 ">
               <img src="/Instagrampost _Flatline.png" alt="" className="" />
@@ -87,12 +87,12 @@ export default function WhatWeDo() {
           </div>
           <div
             data-aos="zoom-in-left"
-            className="flex flex-col overflow-hidden md shadow-sm lg:flex-row-reverse"
+            className="flex flex-col overflow-hidden md shadow-sm bg-slate-700/10 rounded-3xl my-4 lg:flex-row-reverse "
           >
             <div className="flex items-center justify-center flex-1 ">
               <img src="/Designer _Flatline.png" alt="" className=" " />
             </div>
-            <div className="flex flex-col justify-center flex-1 px-6 py-12 ">
+            <div className="flex flex-col justify-center flex-1 px-12 py-12 ">
               {/* <span className="text-xs uppercase dark:text-coolGray-400">Join, it's free</span> */}
               <h2 className="text-3xl font-bold">Web Development</h2>
               <p className="my-6 dark:text-coolGray-400">
@@ -111,8 +111,8 @@ export default function WhatWeDo() {
           </div>
           <div
             data-aos="zoom-in"
-            className="flex flex-col overflow-hidden md shadow-sm lg:flex-row"
-          >
+            className="flex flex-col overflow-hidden md shadow-sm bg-slate-700/10 rounded-3xl my-4 lg:flex-row"
+           >
             <div className="flex items-center justify-center flex-1 ">
               <img src="/Userinterface_Flatline.png" alt="" className=" " />
             </div>
