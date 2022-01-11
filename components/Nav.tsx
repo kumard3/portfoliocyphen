@@ -1,8 +1,8 @@
-import { useState } from "react";
+import { useState ,useEffect} from "react";
 import { Drawer } from "@mantine/core";
 
 import Link from "next/link";
-
+import { useRouter, } from "next/router";
 const navlink = [
   {
     name: "about",
@@ -15,17 +15,39 @@ const navlink = [
 ];
 
 export default function Nav() {
+  const router = useRouter()
   const [opened, setOpened] = useState(false);
+  const [show, setShow] = useState(true);
+  const controlNavbar = () => {
+    if (window.scrollY > 100) {
+      setShow(false);
+    } else {
+      setShow(true);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", controlNavbar);
+    return () => {
+      window.removeEventListener("scroll", controlNavbar);
+    };
+  }, []);
+
   return (
     // <Popover className= {`sticky top-0 z-40 w-full backdrop-blur flex-none transition-colors duration-500 lg:z-50 lg:border-b lg:border-gray-900/10 bg-white supports-backdrop-blur:bg-white/95 ${show && 'bg-inherit	'}`}>
-    <div className="sticky top-0 z-50 bg-white backdrop-blur-sm border-black border-b-[1px] text-xl font-bold  flex-none transition-colors duration-500 lg:z-50 ">
+    <div
+      className={`sticky top-[-100px] z-50  ${
+        show == true && "text-black text-xl font-bold drop-shadow-xl	"
+      } ${
+        show === false &&
+        "backdrop-blur-sm text-black text-xl font-bold drop-shadow-xl flex-none transition-colors duration-500 lg:z-50 lg:border-b lg:border-gray-900/10 bg-white/70"
+      }`}>
       <div className="w-full container mx-auto">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 ">
           <div className="flex justify-between items-center   py-6 sm:justify-between sm:space-x-10">
             <div className="flex justify-start lg:w-0 lg:flex-1">
-              {/* <li className={router.pathname == "#hero" ? "active" : "koko"}>
-              <Link href="#hero">home</Link>
-            </li> */}
+
+          
               <Link href="/">
                 <img src="/cyphen-logo.png" alt="logo" className="h-[3.5rem]" />
                 {/* <span className="text-4xl font-bold">logo</span> */}
@@ -52,6 +74,7 @@ export default function Nav() {
                 </button>
               </div>
             </div>
+            <div className={router.asPath == "/#" ? "bg-red-500 text-blue-900" : "koko"}>
             <nav className="hidden sm:flex space-x-10 items-center">
               {navlink.map((n) => {
                 return (
@@ -61,6 +84,7 @@ export default function Nav() {
                 );
               })}
             </nav>
+          </div>
           </div>
         </div>
 
