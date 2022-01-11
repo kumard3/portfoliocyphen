@@ -3,6 +3,7 @@ import { Drawer } from "@mantine/core";
 
 import Link from "next/link";
 import { useRouter, } from "next/router";
+import useScrollDirection from "./useScrollDirection";
 const navlink = [
   {
     name: "about",
@@ -18,6 +19,7 @@ export default function Nav() {
   const router = useRouter()
   const [opened, setOpened] = useState(false);
   const [show, setShow] = useState(true);
+  const scrollDirection = useScrollDirection('down');
   const controlNavbar = () => {
     if (window.scrollY > 100) {
       setShow(false);
@@ -27,20 +29,21 @@ export default function Nav() {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", controlNavbar);
     return () => {
       window.removeEventListener("scroll", controlNavbar);
+   
     };
   }, []);
+  
 
   return (
     // <Popover className= {`sticky top-0 z-40 w-full backdrop-blur flex-none transition-colors duration-500 lg:z-50 lg:border-b lg:border-gray-900/10 bg-white supports-backdrop-blur:bg-white/95 ${show && 'bg-inherit	'}`}>
     <div
-      className={`sticky top-[-100px] z-50  ${
-        show == true && "text-black text-xl font-bold drop-shadow-xl	"
+      className={ `fixed w-full flex  z-50 backdrop-blur-sm text-black text-xl font-bold drop-shadow-xl flex-none ease-in-out duration-300 0 lg:z-50 lg:border-b lg:border-gray-900/10 bg-white/70  ${
+        scrollDirection === 'down' && "text-black text-xl font-bold drop-shadow-xl mt-[-120px] ease-in-out duration-300 	"
       } ${
-        show === false &&
-        "backdrop-blur-sm text-black text-xl font-bold drop-shadow-xl flex-none transition-colors duration-500 lg:z-50 lg:border-b lg:border-gray-900/10 bg-white/70"
+        scrollDirection === 'up' &&
+        " mt-0 backdrop-blur-sm text-black text-xl font-bold drop-shadow-xl flex-none ease-in-out duration-300 0 lg:z-50 lg:border-b lg:border-gray-900/10 bg-white/70"
       }`}>
       <div className="w-full container mx-auto">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 ">
@@ -74,7 +77,7 @@ export default function Nav() {
                 </button>
               </div>
             </div>
-            <div className={router.asPath == "/#" ? "bg-red-500 text-blue-900" : "koko"}>
+    
             <nav className="hidden sm:flex space-x-10 items-center">
               {navlink.map((n) => {
                 return (
@@ -84,8 +87,7 @@ export default function Nav() {
                 );
               })}
             </nav>
-          </div>
-          </div>
+           </div>
         </div>
 
         <Drawer
