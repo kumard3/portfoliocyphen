@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 import WhatWeDo from "../components/WhatWeDo";
 import SEO from "../components/Seo";
 import Stats from "../components/Stats";
+import Development from "../components/Development";
 
 
 const Home: NextPage = () => {
@@ -23,8 +24,9 @@ const Home: NextPage = () => {
       />
       <Nav />
       <Hero />
-      <Stats />
+      <Development />
       <WhatWeDo />
+      <Stats />
       <Carousel />
       <Contact />
       <Footer />

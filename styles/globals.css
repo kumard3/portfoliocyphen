@@ -27,64 +27,64 @@ body{
   border: 1px solid rgba( 255, 255, 255, 0.18 );
   }
 
-/* 
-.svg-bg_background__2ILQI {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 42rem;
-    left: 0;
-    display: block;
-    z-index: -1;
+  wrapper {
+   max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* .accordion-wrapper {
+    & + * 
+      margin-top: 0.5em;
+    
+  } */
+  
+  .accordion-item {
     overflow: hidden;
+    transition: max-height 0.3s cubic-bezier(1, 0, 1, 0);
+    height: auto;
+    max-height: 9999px;
+  }
+  
+  .accordion-item.collapsed {
+    max-height: 0;
+    transition: max-height 0.35s cubic-bezier(0, 1, 0, 1);
+  }
+  
+  .accordion-title {
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0.5em 1.5em;
+    font-size: 28px;
+    border-radius: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    
+    
 }
-@media (max-width:760px){
-    .svg-bg_background__2ILQI {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 56rem;
-        left: 0;
-        display: block;
-        z-index: -1;
-        overflow: hidden;
-    }  
+.accordion-title::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid currentColor;
 }
-.svg-bg_background__2ILQ {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 60rem;
-    left: 0;
-    display: block;
-    z-index: -1;
-    overflow: hidden;
-}
-.services_viewMore__lfD7u a {
-    display: inline-block;
-    background: #4945af;
-    padding: 10px 20px;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: 700;
-    box-shadow: 0 2px 0 #413e9d, 2px 4px 6px #4642a8;
-    -webkit-transition: box-shadow .2s;
-    transition: box-shadow .2s;
-}
-.services_viewMoreIcon__zPZ8L {
-    display: inline-block;
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    -webkit-transition: -webkit-transform .2s;
-    transition: -webkit-transform .2s;
-    transition: transform .2s;
-    transition: transform .2s,-webkit-transform .2s;
-} */
 
-.mantine-6sa7kb  {
-
+.accordion-title.open::after {
+    content: "";
+    border-top: 0;
+    font-size: 26px;
+    border-bottom: 5px solid;
+  
 }
+  .accordion-content {
+    font-size: 24px;
+    padding: 1em 1.5em;
+  }
+  
+
 .mantine-Drawer-drawer{
 
     background-color:#0A192F;
