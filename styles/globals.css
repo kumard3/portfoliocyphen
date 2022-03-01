@@ -7,6 +7,26 @@
 body{
     font-family: 'PT Sans', sans-serif;
 }
+
+.gradientText {
+    background: -webkit-linear-gradient(left, #ff8867, #ff52ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .gradientbutton {
+    color: white;
+    background: -webkit-linear-gradient(left, #ff8867, #ff52ff);
+    background-size: 200% 200%;
+    animation: gradient-animation 4s ease infinite;
+  }
+  .glass{
+    backdrop-filter: saturate(180%) blur(14px);
+    background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  }
+
 /* 
 .svg-bg_background__2ILQI {
     width: 100%;
@@ -79,12 +99,7 @@ body{
 
    
   /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #EF4444; 
-    /* border-radius: 4px; */
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #EF4444F; 
-  }
+    ::-webkit-scrollbar-thumb {
+        background: #ff8867; 
+        border-radius: 10px;
+    }

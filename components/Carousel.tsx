@@ -3,65 +3,27 @@ import { useState } from "react";
 
 const data = [
   {
-    name: "DevBlogs ",
-    description:
-      "DevBlogs is a Next.Js site, where i used to write blogs about web-development and software-development.  If you want to learn something, do check this website.",
-    href: `https://cyphen-blog.vercel.app`,
-    img: "/Startup_Flatline.png",
-  },
-  {
-    name: "DevUi",
-    description:
-      "DevUI is a free, open-source collection of UI components and templates based on Tailwind CSS.",
-    href: `https://dev-ui.vercel.app/`,
-
-    img: "/Userinterface_Flatline.png",
-  },
-  {
-    name: "A-Lab",
-    description:
-      "Virtual Platform designed to develop your engineering skills through lab work . Through this approach, Virtual Lab aims to ease the learning process by involving students in practical activities carried out in a virtual laboratory using technologies such as 3D and Virtual Reality.",
-    href: `https://a-lab.vercel.app/`,
-
-    img: "/Designer _Flatline.png",
-  },
-  {
     name: "Expert Dental",
     href: `https://www.expertdental.co.in/`,
     description:
       "Expert Dental in Patna offers a host of treatments and cures for a wide range of dental ailments faced by the patients. Few of the dental procedures they offer range from inducing fillings and repairs in the tooth and many other dental services.",
-    img: "/Contentcreation_Flatline.png",
-  },
+    img: "/expert-dental.png",
+  },  
   {
-    name: "DevBlogs ",
+    name: "Etm Bikes",
+    href: `https://etm-bike.in/`,
     description:
-      "DevBlogs is a Next.Js site, where i used to write blogs about web-development and software-development.  If you want to learn something, do check this website.",
-    href: `https://cyphen-blog.vercel.app`,
-    img: "/Startup_Flatline.png",
-  },
-  {
-    name: "DevUi",
-    description:
-      "DevUI is a free, open-source collection of UI components and templates based on Tailwind CSS.",
-    href: `https://dev-ui.vercel.app/`,
-
-    img: "/Instagrampost _Flatline.png",
-  },
-  {
-    name: "A-Lab",
-    description:
-      "Virtual Platform designed to develop your engineering skills through lab work . Through this approach, Virtual Lab aims to ease the learning process by involving students in practical activities carried out in a virtual laboratory using technologies such as 3D and Virtual Reality.",
-    href: `https://a-lab.vercel.app/`,
-
-    img: "/Sendingemails_Flatline.png",
-  },
-  {
+      "Expert Dental in Patna offers a host of treatments and cures for a wide range of dental ailments faced by the patients. Few of the dental procedures they offer range from inducing fillings and repairs in the tooth and many other dental services.",
+    img: "/etm.png",
+  },  {
     name: "Expert Dental",
     href: `https://www.expertdental.co.in/`,
     description:
       "Expert Dental in Patna offers a host of treatments and cures for a wide range of dental ailments faced by the patients. Few of the dental procedures they offer range from inducing fillings and repairs in the tooth and many other dental services.",
-    img: "/Contentcreation_Flatline.png",
+    img: "/astroyantra.png",
   },
+
+ 
 ];
 // const featuredData = [{}]
 let count = 0;
@@ -96,21 +58,21 @@ export default function Carousel() {
         </div>
         <div className="overflow-x-scroll">
           <div className="flex   max-w-[3000px] rounded-md shadow-sm">
-            <div className="flex items-center justify-center rounded-xl w-[595px] bg-slate-700 ">
+            <div className="flex items-center justify-center rounded-xl w-[595px]  ">
               <img
                 className=" rounded-xl"
                 src={data[currentIndex].img}
                 alt=""
               />
             </div>
-            <div className=" hidden items-center sm:flex rounded-xl w-[595px] bg-blue-700  mx-2 ">
+            <div className=" hidden items-center sm:flex rounded-xl w-[595px]  mx-2 ">
               <img
                 className=" rounded-xl"
                 src={data[currentIndex + 1]?.img}
                 alt=""
               />
             </div>
-            <div className="hidden items-center lg:flex rounded-xl w-[595px] bg-red-800  mx-2 ">
+            <div className="hidden items-center lg:flex rounded-xl w-[595px]  mx-2 ">
               <img
                 className=" rounded-xl"
                 src={data[currentIndex + 2]?.img}

@@ -1,8 +1,29 @@
-import Document from 'next/document';
-import { createGetInitialProps } from '@mantine/next';
+import Document, {
+  Html,
+  Head,
+  Main,
+  NextScript,
+  DocumentContext,
+} from "next/document";
 
-const getInitialProps = createGetInitialProps();
+class MyDocument extends Document {
+  static async getInitialProps(ctx: DocumentContext) {
+    const initialProps = await Document.getInitialProps(ctx);
 
-export default class _Document extends Document {
-  static getInitialProps = getInitialProps;
+    return initialProps;
+  }
+
+  render() {
+    return (
+      <Html>
+        <Head />
+        <body className="bg-[#121212] text-white w-full min-h-screen  ">
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
+    );
+  }
 }
+
+export default MyDocument;

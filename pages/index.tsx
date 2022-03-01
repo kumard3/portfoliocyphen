@@ -6,10 +6,12 @@ import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import WhatWeDo from "../components/WhatWeDo";
 import SEO from "../components/Seo";
+import Stats from "../components/Stats";
+
 
 const Home: NextPage = () => {
   return (
-    <div className=" min-h-screen bg-[#141628] text-white	">
+    <div className="">
       <SEO
         title={"Cyphen Innovations"}
         description={
@@ -21,6 +23,7 @@ const Home: NextPage = () => {
       />
       <Nav />
       <Hero />
+      <Stats />
       <WhatWeDo />
       <Carousel />
       <Contact />

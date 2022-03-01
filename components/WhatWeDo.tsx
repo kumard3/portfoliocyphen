@@ -7,12 +7,15 @@ export default function WhatWeDo() {
     AOS.init();
   }, []);
   return (
-    <div className="flex  flex-col justify-center items-center w-full my-[30vh]  text-2xl sm:text-3xl " id="about">
+    <div
+      id="services"
+      className="flex  flex-col justify-center items-center w-full   text-2xl sm:text-3xl "
+    >
+
       <div className="container  mx-auto flex justify-center items-center my-[1rem]">
         <h1 className="text-4xl  text-center font-semibold  max-w-3xl p-4">
           {" "}
-          We are an Indian digital agency. We blend our enthusiasm for
-          human-centered design with cutting-edge development tools.{" "}
+
         </h1>
       </div>
       <div className=" mt-[50px] index1">
@@ -57,31 +60,37 @@ export default function WhatWeDo() {
       <section className=" w-full mt-[10rem] ">
         <div className="container mx-auto ">
           {" "}
-          <h1 className="text-6xl font-bold text-orange-600 text-center">
+          <h1 className="text-6xl font-bold text-orange-600 text-center ">
             {" "}
             what we do?{" "}
           </h1>{" "}
+          <h2 className="mt-4">
+            We are fully focused to solve your business challenges. No matter
+            the technology or architecture, we will find the most optimal
+            solution and deliver a ready-to-operate product.
+          </h2>
         </div>
         <div className="p-4 lg:p-8 container mx-auto">
-          <div
+        <div
             data-aos="zoom-in"
-            className="flex flex-col overflow-hidden md shadow-sm bg-slate-700/10 rounded-3xl my-4 lg:flex-row "
+            className="flex flex-col overflow-hidden md shadow-sm bg-slate-700/10 rounded-3xl my-4 lg:flex-row"
           >
             <div className="flex items-center justify-center flex-1 ">
-              <img src="/Instagrampost _Flatline.png" alt="" className="" />
+              <img src="/Userinterface_Flatline.png" alt="" className=" " />
             </div>
             <div className="flex flex-col justify-center flex-1 px-6 py-12 ">
-              {/* <span className="text-xs uppercase dark:text-coolGray-400">Digital Markting</span> */}
-              <h2 className="text-3xl font-bold">Digital Markting</h2>
+              {/* <span className="text-xs uppercase dark:text-coolGray-400">Join, it's free</span> */}
+              <h2 className="text-3xl font-bold">Mobile Development</h2>
               <p className="my-6 dark:text-coolGray-400">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-                aliquam possimus quas, error esse quos.
+                We specialize in building native mobile apps for Android and iOS
+                using React Native.
               </p>
               {/* <button type="button" className="self-start">Action</button> */}
+
               <ul className="list-disc">
-                <li>Content Management Systems</li>{" "}
-                <li>Content Management Systems</li>{" "}
-                <li>Content Management Systems</li>
+                <li>React Native Development</li> <li>API Development</li>
+                <li>Backend Development</li>
+                <li>3rd party Integrations</li>
               </ul>
             </div>
           </div>
@@ -109,26 +118,26 @@ export default function WhatWeDo() {
               {/* <button type="button" className="self-start">Action</button> */}
             </div>
           </div>
+     
           <div
             data-aos="zoom-in"
-            className="flex flex-col overflow-hidden md shadow-sm bg-slate-700/10 rounded-3xl my-4 lg:flex-row"
-           >
+            className="flex flex-col overflow-hidden md shadow-sm bg-slate-700/10 rounded-3xl my-4 lg:flex-row "
+          >
             <div className="flex items-center justify-center flex-1 ">
-              <img src="/Userinterface_Flatline.png" alt="" className=" " />
+              <img src="/Instagrampost _Flatline.png" alt="" className="" />
             </div>
             <div className="flex flex-col justify-center flex-1 px-6 py-12 ">
-              {/* <span className="text-xs uppercase dark:text-coolGray-400">Join, it's free</span> */}
-              <h2 className="text-3xl font-bold">Mobile Development</h2>
+              {/* <span className="text-xs uppercase dark:text-coolGray-400">Digital Markting</span> */}
+              <h2 className="text-3xl font-bold">Digital Markting</h2>
               <p className="my-6 dark:text-coolGray-400">
-                We specialize in building native mobile apps for Android and iOS
-                using React Native.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                aliquam possimus quas, error esse quos.
               </p>
               {/* <button type="button" className="self-start">Action</button> */}
-
               <ul className="list-disc">
-                <li>React Native Development</li> <li>API Development</li>
-                <li>Backend Development</li>
-                <li>3rd party Integrations</li>
+                <li>Content Management Systems</li>{" "}
+                <li>Content Management Systems</li>{" "}
+                <li>Content Management Systems</li>
               </ul>
             </div>
           </div>
