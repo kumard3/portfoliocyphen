@@ -17,7 +17,7 @@ export default function Service() {
             <a href="/#contact"> Service</a>{" "}
           </button>
         </div>
-        <div className="justify-center items-center flex flex-wrap">
+        <div className="justify-start items-center container mx-auto flex flex-wrap">
           {ServiceData.map((n, index) => {
             return (
               <div
