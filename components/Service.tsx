@@ -5,7 +5,7 @@ export default function Service() {
   return (
     <div
       id="services"
-      className="flex  flex-col justify-center items-center w-full "
+      className="flex  flex-col px-4 justify-center items-center w-full  min-h-screen"
     >
       <section className=" w-full mt-[10rem] ">
         <div className="flex justify-center items-center sm:justify-between px-10 sm:flex-row  flex-col">
@@ -17,12 +17,12 @@ export default function Service() {
             <a href="/#contact"> Service</a>{" "}
           </button>
         </div>
-        <div className="p-4 lg:p-8 container justify-center items-center flex flex-wrap mx-auto">
+        <div className="justify-center items-center flex flex-wrap">
           {ServiceData.map((n, index) => {
             return (
               <div
                 key={index}
-                className="flex flex-col overflow-hidden h-[24rem] max-w-[400px] shadow-sm bg-slate-700/10 rounded-3xl my-4 "
+                className="flex flex-col overflow-hidden mx-2 h-[24rem] max-w-[390px] shadow-sm bg-slate-700/10 rounded-3xl my-4 "
               >
                 <div className="flex items-center justify-center flex-1 ">
                   <img src={n.image} alt="" className=" " />

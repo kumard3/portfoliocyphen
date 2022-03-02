@@ -18,7 +18,7 @@ export default function WhatWeDo() {
             {" "}
             What we do?{" "}
           </h1>{" "}
-          <div className="flex flex-wrap items-center sm:justify-around px-4 my-[7rem] justify-center">
+          <div className="flex flex-wrap items-center sm:justify-around px-4 mt-[7rem] justify-center">
             <div className="max-w-xl">
               <h1 className="text-5xl font-mono"> <span className="gradientText">Build your brand </span>  and grow your business.</h1>
               <p className="mt-4 max-w-xl font-sans text-xl ">
