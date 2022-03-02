@@ -60,8 +60,8 @@ export default function Carousel() {
           </div>
         </div>
 
-        <div className="flex flex-col justify-center flex-1 px-6 ">
-          <div className=" flex items-center px-3 my-[4rem] sm:ml-[-2rem]">
+        <div className="flex lg:hidden flex-col justify-center flex-1 px-6 ">
+          <div className=" flex items-center px-3  sm:ml-[-2rem]">
             <button
               onClick={handleOnPrevClick}
               aria-label="previous"
