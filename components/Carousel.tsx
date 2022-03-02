@@ -8,12 +8,10 @@ export default function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleOnNextClick = () => {
-    // count = (count + 1) % featuredImages.length;
     count = (count + 1) % WorkData.length;
     setCurrentIndex(count);
   };
   const handleOnPrevClick = () => {
-    // const productsLength = featuredImages.length;
     const productsLength = WorkData.length;
     count = (currentIndex + productsLength - 1) % productsLength;
     setCurrentIndex(count);
