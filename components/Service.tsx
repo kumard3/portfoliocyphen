@@ -12,7 +12,7 @@ export default function Service() {
           <h1 className="text-center font-mono gradientText  text-5xl">
             Our Services
           </h1>
-          <button className="gradientbutton px-10 w-[10rem] py-[.5em] rounded-xl text-xl font-mono">
+          <button className="gradientbutton px-10 w-[10rem] my-5 sm:m-0 py-[.5em] rounded-xl text-xl font-mono">
             {" "}
             <a href="/#contact"> Service</a>{" "}
           </button>
