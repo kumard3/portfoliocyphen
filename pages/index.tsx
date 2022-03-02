@@ -8,7 +8,7 @@ import WhatWeDo from "../components/WhatWeDo";
 import SEO from "../components/Seo";
 import Stats from "../components/Stats";
 import Development from "../components/Development";
-
+import Service from "../components/Service";
 
 const Home: NextPage = () => {
   return (
@@ -26,6 +26,7 @@ const Home: NextPage = () => {
       <Hero />
       <Development />
       <WhatWeDo />
+      <Service />
       <Stats />
       <Carousel />
       <Contact />

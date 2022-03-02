@@ -94,7 +94,7 @@ export default function Contact() {
           </label>
           <button
             type="submit"
-            className="self-center px-8 py-3 text-2xl rounded text-white font-bold bg-[#E26832] ">
+            className="self-center px-8 py-3 text-2xl rounded text-white font-bold gradientbutton ">
             Submit
           </button>
         </form>

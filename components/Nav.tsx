@@ -7,7 +7,7 @@ import useScrollDirection from "./useScrollDirection";
 const navlink = [
   {
     name: "About",
-    href: "/#hero",
+    href: "/#about",
   },
   {
     name: "Services",

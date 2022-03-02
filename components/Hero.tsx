@@ -1,6 +1,8 @@
 export default function Hero() {
   return (
-    <section className=" w-full h-screen overflow-hidden " id="hero">
+    <section className=" w-full h-screen overflow-hidden  " id="hero">
+
+
       <div className="flex flex-col  justify-center items-center w-full h-full text-center px-2">
         <p className="text-2xl font-mono  gradientText"> We Deliver </p>
         <h1 className="text-5xl sm:text-7xl font-sans font-bold my-2 ">
@@ -20,14 +22,12 @@ export default function Hero() {
           We are product developers, advisors and engineers solving business
           challenges via creating future-ready apps, websites and digital
           solutions.
-    
         </p>
         <button className=" px-8 py-3 min-h-[3rem] mr-4 active:scale-105 scale-110 active:transition-all text-lg font-bold rounded gradientbutton text-white  ">
           {" "}
           GET A QUOTE IN 24 HOURS
         </button>
       </div>
-
     </section>
   );
 }
