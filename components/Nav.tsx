@@ -93,9 +93,9 @@ export default function Nav() {
           aria-labelledby="drawer-title"
           aria-describedby="drawer-body"
           closeButtonLabel="Close drawer"
-          className="   "
+        
         >
-          <div className="mt-6 bg-[#141628]">
+          <div className="mt-6 ">
             <nav className="grid gap-y-8">
               {navlink.map((item) => (
                 <a
@@ -109,10 +109,6 @@ export default function Nav() {
             </nav>
           </div>
         </Drawer>
-        {/* <Popover.Panel
-            focus
-            className="absolute top-0  inset-x-0 p-2 h-[100vh] transition transform origin-top-right md:hidden"
-          ></Popover.Panel> */}
       </div>
     </div>
   );

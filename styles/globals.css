@@ -95,8 +95,9 @@ body{
 
 .mantine-Drawer-drawer{
 
-    background-color:#0A192F;
+    background-color:#0a0a0b;
     color:white;
+    max-width: 300px;
 
 }
 ::-webkit-scrollbar {

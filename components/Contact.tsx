@@ -49,7 +49,7 @@ export default function Contact() {
       <div className="flex flex-col justify-between">
         <div className="space-y-2">
           <h2 className="text-4xl font-bold leading-tight lg:text-5xl">
-            Let's talk!
+            Let's connect !
           </h2>
         </div>
         <img src="/Sendingemails_Flatline.png" alt="" className="w-[30rem]" />
