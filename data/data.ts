@@ -37,20 +37,20 @@ export const WorkData = [
     href: `https://www.expertdental.co.in/`,
     description:
       "Expert Dental in Patna offers a host of treatments and cures for a wide range of dental ailments faced by the patients. Few of the dental procedures they offer range from inducing fillings and repairs in the tooth and many other dental services.",
-    img: "/expert-dental.png",
+    img: "/expert-dental.webp",
   },
   {
     name: "Etm Bikes",
     href: `https://etm-bike.in/`,
     description:
       "Expert Dental in Patna offers a host of treatments and cures for a wide range of dental ailments faced by the patients. Few of the dental procedures they offer range from inducing fillings and repairs in the tooth and many other dental services.",
-    img: "/etm.png",
+    img: "/etm.webp",
   },
   {
     name: "Expert Dental",
     href: `https://www.expertdental.co.in/`,
     description:
       "Expert Dental in Patna offers a host of treatments and cures for a wide range of dental ailments faced by the patients. Few of the dental procedures they offer range from inducing fillings and repairs in the tooth and many other dental services.",
-    img: "/astroyantra.png",
+    img: "/astroyantra.webp",
   },
 ];

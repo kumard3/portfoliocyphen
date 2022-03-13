@@ -20,17 +20,20 @@ export default function WhatWeDo() {
           </h1>{" "}
           <div className="flex flex-wrap items-center sm:justify-around px-4 mt-[7rem] justify-center">
             <div className="max-w-xl">
-              <h1 className="text-5xl font-mono"> <span className="gradientText">Build your brand </span>  and grow your business.</h1>
+              <h1 className="text-5xl font-mono">
+                {" "}
+                <span className="gradientText">Build your brand </span> and grow
+                your business.
+              </h1>
               <p className="mt-4 max-w-xl font-sans text-xl ">
                 We are fully focused to solve your business challenges. No
                 matter the technology or architecture, we will find the most
                 optimal solution and deliver a ready-to-operate product.
               </p>
             </div>
-            <img src="illustration-3.png" />
+            <img alt="" src="illustration-3.png" />
           </div>
         </div>
-      
       </section>
     </div>
   );

@@ -15,9 +15,9 @@ export default function Stats() {
             className="flex justify-center text-gray-400"
           >
             <img
-              className="w-auto h-[7rem]"
-              width="154"
-              height="39"
+              width="100"
+              height="100"
+              alt="expert dental"
               src="https://www.expertdental.co.in/logo.png"
             />
           </a>
@@ -27,7 +27,12 @@ export default function Stats() {
             target="_blank"
             className="flex justify-center text-gray-400"
           >
-            <img src="http://www.gabbahealthhub.com.au/assets/img/logo.png" />
+            <img
+              alt="gabbahealthhub"
+              width="100"
+              height="40"
+              src="http://www.gabbahealthhub.com.au/assets/img/logo.png"
+            />
           </a>
 
           <a
@@ -35,17 +40,19 @@ export default function Stats() {
             target="_blank"
             className="flex justify-center text-gray-400"
           >
-            <img
-              src="etm-logo.png"
-              className="w-auto h-[7rem]"
-              width="154"
-              height="39"
-            />
+            <img src="etm-logo.png" width="228" alt="etm" height="101" />
           </a>
 
-          <a href="https://astroyantra.com/" target="_blank" className="flex justify-center ">
+          <a
+            href="https://astroyantra.com/"
+            target="_blank"
+            className="flex justify-center "
+          >
             <img
               className=""
+              alt="astroyantra"
+              width="187"
+              height="47"
               src="https://astroyantra.com/wp-content/uploads/2021/11/cropped-download.png"
             />
           </a>
