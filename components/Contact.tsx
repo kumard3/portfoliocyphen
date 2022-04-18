@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import emailjs from "emailjs-com";
 import { useRef, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";

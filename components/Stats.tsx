@@ -12,7 +12,7 @@ export default function Stats() {
           <a
             href="https://www.expertdental.co.in"
             target="_blank"
-            className="flex justify-center text-gray-400"
+            className="flex justify-center text-gray-400" rel="noreferrer"
           >
             <img
               width="100"
@@ -25,20 +25,20 @@ export default function Stats() {
           <a
             href="http://www.gabbahealthhub.com.au/"
             target="_blank"
-            className="flex justify-center text-gray-400"
+            className="flex justify-center text-gray-400" rel="noreferrer"
           >
             <img
               alt="gabbahealthhub"
-              width="100"
+              width="200"
               height="40"
-              src="http://www.gabbahealthhub.com.au/assets/img/logo.png"
+              src="/gabbaHealthub.png"
             />
           </a>
 
           <a
             href="https://www.etmbikes.in/"
             target="_blank"
-            className="flex justify-center text-gray-400"
+            className="flex justify-center text-gray-400" rel="noreferrer"
           >
             <img src="etm-logo.png" width="228" alt="etm" height="101" />
           </a>
@@ -46,7 +46,7 @@ export default function Stats() {
           <a
             href="https://astroyantra.com/"
             target="_blank"
-            className="flex justify-center "
+            className="flex justify-center " rel="noreferrer"
           >
             <img
               className=""

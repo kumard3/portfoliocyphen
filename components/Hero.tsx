@@ -23,10 +23,10 @@ export default function Hero() {
           challenges via creating future-ready apps, websites and digital
           solutions.
         </p>
-        <button className=" px-8 py-3 min-h-[3rem] mr-4 active:scale-105 scale-110 active:transition-all text-lg font-bold rounded gradientbutton text-white  ">
+        <a href="mailto:cypheninnovations@gmail.com" className=" px-8 py-3 min-h-[3rem] mr-4 active:scale-105 scale-110 active:transition-all text-lg font-bold rounded gradientbutton text-white  ">
           {" "}
           GET A QUOTE IN 24 HOURS
-        </button>
+        </a>
       </div>
     </section>
   );

@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+import Link from "next/link";
 import React from "react";
 import { ServiceData } from "../data/data";
 
@@ -13,8 +15,7 @@ export default function Service() {
             Our Services
           </h1>
           <button className="gradientbutton px-10 w-[10rem] my-5 sm:m-0 py-[.5em] rounded-xl text-xl font-mono">
-            {" "}
-            <a href="/#contact"> Service</a>{" "}
+            <Link href="/#contact"> Service</Link>
           </button>
         </div>
         <div className="justify-center items-center  flex flex-wrap">
