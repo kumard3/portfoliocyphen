@@ -6,6 +6,7 @@
 
 body{
     font-family: 'PT Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .gradientText {

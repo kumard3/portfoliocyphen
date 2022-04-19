@@ -14,13 +14,11 @@ const Home: NextPage = () => {
   return (
     <div className="">
       <SEO
-        title={"Cyphen Innovations"}
-        description={
-          "Cyphen is a team if professionals capable of making your business grow digitally"
-        }
-        image={""}
-        url={""}
-        content={"Grow your Business Digitally | In India"}
+        title="Cyphen Innovations"
+        description="Cyphen is a team if professionals capable of making your business grow digitally"
+        image="https://cypheninnovations.com/ogimage.png"
+        url="https://cypheninnovations.com/"
+        content="Grow your Business Digitally | In India"
       />
       <Nav />
       <Hero />

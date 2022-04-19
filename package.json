@@ -9,8 +9,6 @@
         "lint": "next lint"
   },
   "dependencies": {
-    "@headlessui/react": "^1.4.2",
-    "@heroicons/react": "^1.0.5",
     "@mantine/core": "3.5.0",
     "@mantine/hooks": "3.5.0",
     "@mantine/next": "3.5.0",
