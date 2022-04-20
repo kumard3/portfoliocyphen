@@ -82,13 +82,14 @@
 // }
 
 import React, { useState, useEffect, useRef } from "react";
-      //@ts-ignore
+//@ts-ignore
 
 import HALO from "vanta/dist/vanta.halo.min";
 import * as THREE from "three";
 
 export default function Hero() {
   const [vantaEffect, setVantaEffect] = useState(0);
+  const [vantaEffectMobile, setVantaEffectMobile] = useState(0);
   const myRef = useRef(null);
 
   useEffect(() => {
@@ -115,28 +116,41 @@ export default function Hero() {
       if (vantaEffect) vantaEffect.destroy();
     };
   }, [vantaEffect]);
+  useEffect(() => {
+    if (!vantaEffectMobile) {
+      setVantaEffectMobile(
+        HALO({
+          el: "#haloMobile",
+          THREE,
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.0,
+          minWidth: 200.0,
+          baseColor: 0x0,
+          backgroundColor: 0x0,
+          xOffset: 0.45,
+          yOffset: 0.36,
+        })
+      );
+    }
+    return () => {
+      //@ts-ignore
+      if (vantaEffectMobile) vantaEffectMobile.destroy();
+    };
+  }, [vantaEffectMobile]);
   return (
     <div className="min-h-screen overflow-hidden relative">
       <div
-        className="-top-[300px] overflow-hidden sm:top-0 -right-[200px] sm:right-0 z-0  h-[900px] w-full justify-center bg-contain absolute inline"
+        className="-top-[300px] hidden sm:inline overflow-hidden sm:top-0 -right-[200px] sm:right-0 z-0  h-[900px] w-full justify-center bg-contain absolute "
         id="halo"
-      >
-        <canvas
-          className="vanta-canvas"
-          width="400"
-          height="400"
-          // style={{
-          //   position: "absolute",
-          //   zIndex: "0",
-          //   top: "0px",
-          //   left: "0px",
-          //   width: "200px",
-          //   height: "200px",
-          // }}
-        ></canvas>
-      </div>
+      ></div>
+      <div
+        className=" inline sm:hidden overflow-hidden sm:top-0  sm:right-0 z-0  h-[900px] w-full justify-center bg-contain absolute "
+        id="haloMobile"
+      ></div>
       <section
-        className=" w-full h-screen overflow-hidden  relative z-50"
+        className=" w-full h-screen overflow-hidden  relative z-10"
         id="hero"
       >
         <div className="flex justify-center flex-col items-start h-full px-10">
