@@ -85,7 +85,7 @@ import React, { useState, useEffect, useRef } from "react";
 //@ts-ignore
 
 import HALO from "vanta/dist/vanta.halo.min";
-import * as THREE from "three";
+
 
 export default function Hero() {
   const [vantaEffect, setVantaEffect] = useState(0);
@@ -121,7 +121,6 @@ export default function Hero() {
       setVantaEffectMobile(
         HALO({
           el: "#haloMobile",
-          THREE,
           mouseControls: true,
           touchControls: true,
           gyroControls: false,
@@ -153,7 +152,7 @@ export default function Hero() {
         className=" w-full h-screen overflow-hidden  relative z-10"
         id="hero"
       >
-        <div className="flex justify-center flex-col items-start h-full px-10">
+        <div className="flex justify-center flex-col items-start h-full px-5 sm:px-10">
           <div className="">
             <p className="text-xl font-mono ml-2  gradientText"> We Deliver </p>
 
