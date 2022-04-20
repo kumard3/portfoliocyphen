@@ -155,13 +155,10 @@ export default function Hero() {
       >
         <div className="flex justify-center flex-col items-start h-full px-10">
           <div className="">
-            <p className="text-2xl font-mono  gradientText"> We Deliver </p>
-            <h1 className="text-5xl sm:text-7xl font-sans font-bold my-3 ">
-              {" "}
-              World-Class
-            </h1>
-            <h1 className="text-5xl sm:text-7xl font-sans font-bold my-3 ">
-              Digital Solutions
+            <p className="text-xl font-mono ml-2  gradientText"> We Deliver </p>
+
+            <h1 className="text-5xl sm:text-7xl font-sans font-bold my-2 max-w-xl ">
+              World-Class Digital Solutions 
             </h1>
             <h1 className="sm:text-6xl text-4xl font-sans  font-bold my-3 ">
               <span className="underline-offset-1 decoration-red-400	  underline un ">
@@ -171,7 +168,7 @@ export default function Hero() {
                 In-Budget
               </span>
             </h1>
-            <p className="max-w-3xl text-xl text-gray-400 my-5 text-left flex flex-col">
+            <p className=" max-w-xl text-xl text-gray-400 my-5 text-left flex flex-col">
               We are product developers, advisors and engineers solving business
               challenges via creating future-ready apps, websites and digital
               solutions.
