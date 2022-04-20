@@ -20,7 +20,6 @@ class MyDocument extends Document {
         <body className="hero text-white w-full min-h-screen  ">
           <Main />
           <NextScript />
-     
         </body>
       </Html>
     );

@@ -23,7 +23,7 @@ const Accordion = ({ title, children }: Props) => {
 
 export default function Development() {
   return (
-    <>
+    <div className="relative">
       <p className="text-2xl font-mono text-center mb-10 mt-2 gradientText"> Our Expertise</p>
       {/* <h1 className="text-5xl text-center mb-10">Technologies we are GROOVY with</h1> */}
       <div className="wrapper bg-slate-700/10 container mx-auto rounded-xl p-4 ">
@@ -61,6 +61,6 @@ export default function Development() {
           build them solutions that will upscale their businesses.
         </Accordion>
       </div>
-    </>
+    </div>
   );
 }

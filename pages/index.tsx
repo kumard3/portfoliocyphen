@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+// import dynamic from "next/dynamic";
 import Carousel from "../components/Carousel";
 import Hero from "../components/Hero";
 import Nav from "../components/Nav";
